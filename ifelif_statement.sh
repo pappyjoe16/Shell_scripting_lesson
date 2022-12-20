@@ -1,3 +1,4 @@
+#! /bin/bash
 
 echo -e "Enter the name of your sisters: \c"
 read -r a
