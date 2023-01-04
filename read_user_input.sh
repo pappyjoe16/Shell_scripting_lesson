@@ -1,13 +1,19 @@
 #! /bin/bash
 
+#multiple lie comment in shell scripting
+<<COMMENT1
 echo "Enter Your username: "
 #
 read -p 'Username: ' user_name
 echo "Enter your password: "
 # flag -sp make it possible to make input character infeasible
 read -sp 'Password: ' pass_code
-echo
-if [ $user_name == "Joseph" -a $pass_code == "Nifemi" ]; then
+echo !
+COMMENT1
+
+user_passcode=("$@")
+
+if [ ${user_passcode[0]} == "Joseph" -a ${user_passcode[1]} == "Nifemi" ]; then
     echo "Welcome to shell scripting, Let check your eligibility for this course"
     echo "Enter Your name: "
     read -a name
