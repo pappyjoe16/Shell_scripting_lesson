@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#multiple lie comment in shell scripting
+#multiple line comment in shell scripting
 <<COMMENT1
 echo "Enter Your username: "
 #
