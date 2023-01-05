@@ -5,10 +5,10 @@
 # passing argument into the script as an array
 arg=("$@")
 # printing the array by index
-echo ${arg[0]} ${arg[1]} ${arg[2]} ${arg[3]}
+echo "${arg[0]}" "${arg[1]}" "${arg[2]}" "${arg[3]}"
 
 #  printing the argument as a single array
-echo $@
+echo "$@"
 
 #  printing the number of argument passed in to the array
 echo $#
