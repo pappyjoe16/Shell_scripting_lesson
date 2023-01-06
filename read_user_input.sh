@@ -1,15 +1,13 @@
 #! /bin/bash
 
 #multiple line comment in shell scripting
-<<COMMENT1
-echo "Enter Your username: "
-#
-read -p 'Username: ' user_name
-echo "Enter your password: "
+
+# echo "Enter Your username: "
+# read -p 'Username: ' user_name
+# echo "Enter your password: "
 # flag -sp make it possible to make input character infeasible
-read -sp 'Password: ' pass_code
-echo !
-COMMENT1
+# read -sp 'Password: ' pass_code
+# echo !
 
 user_passcode=("$@")
 
@@ -33,6 +31,6 @@ if [ "${user_passcode[0]}" == "Joseph" ] && [ "${user_passcode[1]}" == "Nifemi" 
         fi
     fi
 else
-    echo "Incorrect Username or Password $pass_code"
+    echo "Incorrect Username or Password"
 
 fi
