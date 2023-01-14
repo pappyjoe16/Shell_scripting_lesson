@@ -350,8 +350,8 @@ case_statement
 file_test_operator
 for_loop
 ifelif_statement
-pass_argument "Joseph Nifemi Dara Sewa"
-read_user_input "Joseph Nifemi"
+pass_argument Joseph Nifemi Dara Sewa
+read_user_input Joseph Nifemi
 statement_passer
 until_loop
 variable_test
