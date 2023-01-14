@@ -24,7 +24,7 @@ select food in Rice Poundo Spag Beans; do
 done
 
 for ((i = 0; i <= 10; i++)); do
-    if [ "$i" -gt 5 ]; then
+    if [ "$i" -eq 5 ] || [ "$i" -eq 8 ]; then
         continue
     fi
     echo "$i"
