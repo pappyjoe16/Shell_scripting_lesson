@@ -20,5 +20,5 @@ select food in Rice Poundo Spag Beans; do
         echo "Error, Select number between 1..4"
         ;;
     esac
-
+    break
 done
