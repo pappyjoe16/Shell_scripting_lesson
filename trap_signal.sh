@@ -13,6 +13,7 @@ echo "pid: $$" # PID is Process Identification Number
 
 while ((COUNT < 10)); do
     sleep 6
+    set +x # this will stop your debuging from where set +x is set
     ((COUNT++))
     echo "$COUNT"
 done
