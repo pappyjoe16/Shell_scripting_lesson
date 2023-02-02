@@ -31,3 +31,5 @@ echo "$num1" % "$num3" | bc
 echo "scale=2;sqrt($num3)" | bc -l
 # to get power of something
 echo "scale=2;($num2)^2" | bc -l
+
+exit 245
