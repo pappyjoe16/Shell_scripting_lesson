@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #ret=$?
-./arithmetic_operator.sh
+./exit_check_254.sh
 #[ "$?" -eq 0 ] && echo "done" || echo "failed" && exit 1
 debug_hook_exit_code="$?"
 if [ "${debug_hook_exit_code}" -eq 0 ]; then
@@ -14,9 +14,3 @@ else
 fi
 
 echo "How are you"
-
-echo "I am fine"
-
-#then
-# echo "Failed"
-#fi
