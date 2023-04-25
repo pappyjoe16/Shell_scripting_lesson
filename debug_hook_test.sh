@@ -1,12 +1,12 @@
 #! /bin/bash
 
 #ret=$?
-./exit_check_254.sh
+./exit_check_4.sh
 #[ "$?" -eq 0 ] && echo "done" || echo "failed" && exit 1
 debug_hook_exit_code="$?"
-if [ "${debug_hook_exit_code}" -eq 0 ]; then
+if [ $debug_hook_exit_code -eq 0 ]; then
     echo "Debug hook success. Continuing with csp_startup.sh"
-elif [ "${debug_hook_exit_code}" -eq 245 ]; then
+elif [ $debug_hook_exit_code -eq 245 ]; then
     echo "Debug hook success, but got code 245. Will not continue with csp_startup.sh"
     exit 0
 else

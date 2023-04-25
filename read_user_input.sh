@@ -13,6 +13,8 @@ user_passcode=("$@")
 
 if [ "${user_passcode[0]}" == "Joseph" ] && [ "${user_passcode[1]}" == "Nifemi" ]; then
     echo "Welcome to shell scripting, Let check your eligibility for this course"
+    echo "$1"
+    echo "$2"
     echo "Enter Your name: "
     read -r -a name
     echo "Enter your age: "
