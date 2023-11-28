@@ -7,7 +7,7 @@ fail_with_error() {
     local RED="${ENDCOLOR}\e[31m"
     local BOLDRED="${ENDCOLOR}\e[1;31m"
 
-    echo "
+    echo -e "
 ${BOLDRED}####### Fatal error, aborting bitbake build ######
 
 ${RED}$MSG
